@@ -8,12 +8,29 @@
     android:paddingTop="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+
+   <SearchView
+       android:id="@+id/searchView"
+       android:layout_width="407dp"
+       android:layout_height="40dp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"
+       android:layout_marginBottom="10dp"
+       android:queryHint="recherche pokémon">
+
+   </SearchView>
 
    <android.support.v7.widget.RecyclerView
        android:id="@+id/recyclerView"
        android:layout_width="match_parent"
-       android:layout_height="match_parent">
+       android:layout_height="match_parent"
+       android:scrollbars="vertical"
+       android:layout_below="@+id/searchView"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentLeft="true">
 
    </android.support.v7.widget.RecyclerView>
 
